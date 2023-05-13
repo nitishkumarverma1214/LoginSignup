@@ -1,0 +1,82 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --pink: rgb(255, 65, 127);
+  --purple: rgb(138, 43, 226);
+  --grey: rgba(120, 120, 120, 0.9);
+  --dark-blue: rgb(2, 21, 232, 0.7);
+}
+.loginPage {
+  display: flex;
+}
+.imageContainer {
+  display: none;
+  flex: 1 1 50%;
+  height: 89vh;
+}
+
+.imageContainer img {
+  width: 100%;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+.container {
+  flex: 1 1 50%;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h3,
+.container h5 {
+  color: var(--dark-blue);
+  margin-top: 0.5rem;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.loginForm [type="submit"] {
+  padding: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: var(--purple);
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+  cursor: pointer;
+}
+
+.loginForm button:hover {
+  opacity: 0.8;
+}
+
+.forgotPasswordLink {
+  text-align: end;
+}
+.forgotPasswordLink a {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: var(--grey);
+}
+.signupLink {
+  text-align: center;
+  color: var(--grey);
+}
+.signupLink a {
+  color: var(--grey);
+}
+
+@media screen and (min-width: 786px) {
+  .container {
+    width: 30%;
+  }
+  .imageContainer {
+    display: block;
+  }
+}
